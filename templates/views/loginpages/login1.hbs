@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>metatags}}
+    <link rel="stylesheet" href="sass/imageshow.css">
+    <title>login1</title>
+</head>
+
+<body>
+    <div class="container">
+        <video controls>
+            <source src="/videos/loginpages/login1.mp4" type="video/mp4">
+        </video>
+        <h2>Here is Code of this Template!!</h2>
+        <div class="box">
+            <div class="html">
+                <h2>HTML Code</h2>
+                <pre>
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="sass/index.css"&gt;
+    &lt;title&gt;login page&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;&lt;/h1&gt;
+        &lt;p&gt;Login here! To Explore many templates.&lt;/p&gt;
+        &lt;div class="box"&gt;
+            &lt;div class="input"&gt;
+                &lt;input type="text" placeholder="E-mail"&gt;
+            &lt;/div&gt;
+            &lt;div class="input"&gt;
+                &lt;input type="text" placeholder="Password"&gt;
+            &lt;/div&gt;
+            &lt;div class="p"&gt;
+                &lt;input type="checkbox" name="" id=""&gt; Remember Me |
+                &lt;a href=""&gt;Forget Password&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="button"&gt;
+                &lt;button class="btn"&gt;Login&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+                    </code>
+                </pre>
+            </div>
+            <div class="css">
+                <h2>CSS Code</h2>
+                <pre>
+                    <code>
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body::before {
+  background: url("../img/beach.png") no-repeat center fixed;
+  background-size: cover;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  opacity: .7;
+  z-index: -1;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.container {
+  text-align: center;
+  width: 50%;
+  height: 70vh;
+  margin-top: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation-name: container;
+          animation-name: container;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.container h1 {
+  margin-bottom: 3%;
+}
+
+.container h1::before {
+  content: "Sign";
+  color: white;
+  text-shadow: 1px 4px 4px rgba(245, 222, 179, 0.603);
+}
+
+.container h1::after {
+  content: " in";
+  color: white;
+  text-shadow: 1px 7px 4px rgba(245, 222, 179, 0.603);
+}
+
+.container p {
+  margin-bottom: 7%;
+  color: wheat;
+  text-shadow: 1px 5px 4px rgba(245, 222, 179, 0.603);
+  font-size: 1.1rem;
+}
+
+.container .box {
+  width: 70%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .box .input {
+  width: 65%;
+  margin: 2%;
+}
+
+.container .box .input input {
+  border: none;
+  font-size: 1.2rem;
+  padding: 5px 0px 5px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.582);
+          box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.582);
+}
+
+.container .box .input input:hover {
+  scale: 1.1;
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+}
+
+.container .box .p {
+  margin: 5% 0%;
+  font-size: 1.1rem;
+  text-shadow: 1px 10px 4px rgba(12, 9, 4, 0.603);
+}
+
+.container .box .p a {
+  color: #0000d6;
+}
+
+.container .box .btn {
+  font-size: 1.2rem;
+  padding: 6px 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right bottom, from(#eb6c6c), to(orange));
+  background: linear-gradient(to right bottom, #eb6c6c, orange);
+  color: wheat;
+  -webkit-box-shadow: 4px 10px 4px rgba(0, 0, 0, 0.404);
+          box-shadow: 4px 10px 4px rgba(0, 0, 0, 0.404);
+}
+
+.container .box .btn:hover {
+  scale: 1.1;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+@-webkit-keyframes container {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes container {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

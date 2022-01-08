@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    // border: 2px solid white;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    h2 {
+        position: absolute;
+        left: 4px;
+        top: 2px;
+        animation: name;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+        // @keyframes name {
+        //     from {
+        //         margin-top: -50px;
+        //     }
+        //     to {
+        //         margin-top: 0px;
+        //     }
+        // }
+        &::before {
+            content: "Delight";
+            color: white;
+        }
+        &::after {
+            content: "FULL.com";
+            color: rgb( 0, 255, 255);
+        }
+    }
+    ul {
+        // animation-name: navbar;
+        // animation-iteration-count: 1;
+        // animation-duration: 1.2s;
+        // @keyframes navbar {
+        //     from {
+        //         margin-left: -1000px;
+        //     }
+        //     to {
+        //         margin-left: 0px;
+        //     }
+        // }
+        display: flex;
+        list-style: none;
+        li {
+            color: white;
+            margin: 0px 10px;
+            a {
+                color: white;
+                // text-decoration: none;
+                &:hover {
+                    color: rgb(243, 81, 243);
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        background: linear-gradient(to right, rgb(136, 130, 130), rgb(112, 112, 241));
+        border-radius: 20px;
+        width: 100%;
+        height: 5vh;
+        z-index: -1;
+        opacity: .5;
+    }
+}

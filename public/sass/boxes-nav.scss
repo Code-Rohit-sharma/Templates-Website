@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.boxes-nav {
+    border: 2px solid rgb(218, 177, 218);
+    width: 98%;
+    height: 5%;
+    border-radius: 20px;
+    color: wheat;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
+        li {
+            margin: 4px 2%;
+            cursor: pointer;
+            a {
+                color: white;
+                &:hover {
+                    color: rgb(218, 75, 218);
+                    text-decoration: underline;
+                    scale: 1.1;
+                    transition-duration: .5s;
+                }
+            }
+        }
+    }
+}

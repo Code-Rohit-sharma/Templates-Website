@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{metatags}}
+    <link rel="stylesheet" href="sass/imageshow.css">
+    <title>show image</title>
+</head>
+
+<body>
+    <div class="container">
+        <video controls>
+            <source src="/videos/loginpages/lovebirds.mp4" type="video/mp4">
+        </video>
+        <h2>Here is Code of This Template!</h2>
+        <div class="box">
+            <div class="html">
+                <h2>HTML Code</h2>
+                <pre>
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Italianno&family=Shizuru&family=Special+Elite&display=swap" rel="stylesheet"&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet"&gt;
+    &lt;link rel="stylesheet" href="sass/index.css"&gt;
+    &lt;title&gt;login2&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="image"&gt;
+            &lt;div class="box"&gt;
+                &lt;h1&gt;Lovebirds&lt;/h1&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iste vitae eos!&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="right"&gt;
+            &lt;h1&gt;&lt;/h1&gt;
+            &lt;h2&gt;Welcome To Lovebirds&lt;/h2&gt;
+            &lt;div class="box"&gt;
+                &lt;div class="input"&gt;
+                    &lt;input type="text" placeholder="Username"&gt;
+                &lt;/div&gt;
+                &lt;div class="input"&gt;
+                    &lt;input type="text" placeholder="Password"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="forget-password"&gt;
+                &lt;a href=""&gt;Forget Password?&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;button class="btn"&gt;Sign In&lt;/button&gt;
+            &lt;br&gt; ------or-----
+            &lt;button class="btn2"&gt;&lt;img src="/login2/img/google.jpg" alt=""&gt;Sign In With google&lt;/button&gt;
+            &lt;div class="create-account"&gt;
+                New Lovebird?&lt;a href=""&gt;Create Account&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+                    </code>
+                </pre>
+            </div>
+            <div class="css">
+                <h2>
+                    CSS Code
+                </h2>
+                <pre>
+                    <code>
+                    * {
+                        margin: 0px;
+                        padding: 0px;
+                        }
+
+                        body {
+                        background: grey;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
+                        }
+
+                        .container {
+                        margin-top: 10%;
+                        width: 70%;
+                        height: 65vh;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        }
+
+                        .container .image {
+                        width: 45%;
+                        background: url("../img/birds.png") no-repeat center;
+                        background-size: cover;
+                        background-size: 450px;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
+                        text-align: center;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        -webkit-animation-name: image;
+                                animation-name: image;
+                        -webkit-animation-iteration-count: 1;
+                                animation-iteration-count: 1;
+                        -webkit-animation-duration: 3s;
+                                animation-duration: 3s;
+                        }
+
+                        .container .image .box {
+                        position: relative;
+                        top: 390px;
+                        color: whitesmoke;
+                        }
+
+                        .container .image .box h1 {
+                        font-size: 3.5rem;
+                        font-family: 'Italianno', cursive;
+                        text-decoration: underline;
+                        }
+
+                        .container .image .box p {
+                        font-size: 0.8rem;
+                        padding: 0px 20px;
+                        }
+
+                        .container .image::before {
+                        background: rgba(130, 167, 195, 0.28);
+                        content: "";
+                        position: absolute;
+                        width: 31.50%;
+                        height: 65vh;
+                        z-index: -1;
+                        }
+
+                        @-webkit-keyframes image {
+                        from {
+                            opacity: 0;
+                        }
+                        75% {
+                            opacity: 0;
+                        }
+                        to {
+                            opacity: 1;
+                        }
+                        }
+
+                        @keyframes image {
+                        from {
+                            opacity: 0;
+                        }
+                        75% {
+                            opacity: 0;
+                        }
+                        to {
+                            opacity: 1;
+                        }
+                        }
+
+                        .container .right {
+                        width: 55%;
+                        background: white;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        -webkit-animation-name: right;
+                                animation-name: right;
+                        -webkit-animation-iteration-count: 1;
+                                animation-iteration-count: 1;
+                        -webkit-animation-duration: 2s;
+                                animation-duration: 2s;
+                        }
+
+                        .container .right h1 {
+                        font-family: 'Italianno', cursive;
+                        font-size: 3rem;
+                        margin-top: 2%;
+                        }
+
+                        .container .right h1::before {
+                        content: "Love";
+                        color: black;
+                        text-decoration: underline;
+                        }
+
+                        .container .right h1::after {
+                        content: "birds";
+                        color: rosybrown;
+                        text-decoration: underline;
+                        }
+
+                        .container .right h2 {
+                        margin-top: 5%;
+                        font-family: 'Italianno', cursive;
+                        font-family: 'Shizuru', cursive;
+                        font-family: 'Special Elite', cursive;
+                        }
+
+                        .container .right .box {
+                        margin-top: 5%;
+                        }
+
+                        .container .right .box .input {
+                        width: 400px;
+                        margin-top: 5%;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
+                        }
+
+                        .container .right .box .input input {
+                        font-size: 1rem;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        padding: 5px 10px;
+                        width: 250px;
+                        }
+
+                        .container .right .box .input input:focus {
+                        color: blueviolet;
+                        width: 300px;
+                        -webkit-transition-duration: .3s;
+                                transition-duration: .3s;
+                        font-size: 1.2rem;
+                        border-radius: 10px;
+                        }
+
+                        .container .right .box .input input:hover {
+                        color: blueviolet;
+                        width: 300px;
+                        -webkit-transition-duration: .3s;
+                                transition-duration: .3s;
+                        font-size: 1.2rem;
+                        border-radius: 10px;
+                        }
+
+                        .container .right .forget-password {
+                        margin-top: 3%;
+                        }
+
+                        .container .right .forget-password a {
+                        color: blue;
+                        margin-top: 3%;
+                        position: relative;
+                        left: 100px;
+                        }
+
+                        .container .right .btn {
+                        margin-top: 4%;
+                        width: 150px;
+                        font-size: 1.2rem;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        background: -webkit-gradient(linear, left top, right top, from(rgba(128, 128, 128, 0.726)), to(rgba(128, 128, 128, 0.938)));
+                        background: linear-gradient(to right, rgba(128, 128, 128, 0.726), rgba(128, 128, 128, 0.938));
+                        color: white;
+                        padding: 5px 0px;
+                        margin-bottom: 2%;
+                        }
+
+                        .container .right .btn:hover {
+                        scale: 1.1;
+                        background: -webkit-gradient(linear, right bottom, left top, from(blue), to(grey));
+                        background: linear-gradient(to left top, blue, grey);
+                        }
+
+                        .container .right .btn2 {
+                        margin-top: 5%;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        border: none;
+                        background-color: white;
+                        cursor: pointer;
+                        font-size: 1rem;
+                        }
+
+                        .container .right .btn2 img {
+                        margin-right: 13px;
+                        width: 23px;
+                        }
+
+                        .container .right .btn2:hover {
+                        color: blue;
+                        }
+
+                        .container .right .create-account {
+                        margin-top: 4%;
+                        }
+
+                        .container .right .create-account a {
+                        color: black;
+                        }
+
+                        @-webkit-keyframes right {
+                        from {
+                            opacity: 0;
+                            margin-left: -1000px;
+                        }
+                        to {
+                            margin-left: 0px;
+                        }
+                        }
+
+                        @keyframes right {
+                        from {
+                            opacity: 0;
+                            margin-left: -1000px;
+                        }
+                        to {
+                            margin-left: 0px;
+                        }
+                        }
+                        /*# sourceMappingURL=index.css.map */
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

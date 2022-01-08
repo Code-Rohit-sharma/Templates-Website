@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body::before {
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(117, 117, 246, 0.829)), color-stop(rgba(247, 0, 255, 0.527)), to(rgba(230, 100, 230, 0.678)));
+  background: linear-gradient(to left top, rgba(117, 117, 246, 0.829), rgba(247, 0, 255, 0.527), rgba(230, 100, 230, 0.678));
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.container {
+  width: 70%;
+  height: 70vh;
+  margin-top: 7%;
+  background: white;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 20px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#fb7afb), color-stop(indigo), color-stop(green), color-stop(blue), color-stop(#bbbb27), color-stop(rgba(255, 166, 0, 0.555)), to(red));
+  background-image: linear-gradient(to left, #fb7afb, indigo, green, blue, #bbbb27, rgba(255, 166, 0, 0.555), red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.container .input {
+  width: 100%px;
+  margin: 2% 0px;
+}
+
+.container .input input {
+  font-size: 1.2rem;
+  background: none;
+  width: 300px;
+  margin: 0px 50px;
+  border: none;
+  border-bottom: 2px solid blue;
+  padding-left: 5px;
+  color: red;
+  border-radius: 7px;
+  padding: 5px 20px;
+}
+
+.container .input input:focus {
+  scale: 1.1;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  color: blue;
+}
+
+.container .input label {
+  display: block;
+  margin-bottom: 1%;
+}
+
+.container .btn {
+  width: 300px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ee6f6f), to(rgba(112, 112, 236, 0.596)));
+  background: linear-gradient(to right bottom, #ee6f6f, rgba(112, 112, 236, 0.596));
+  border-radius: 20px;
+  color: white;
+}
+
+.container .btn:hover {
+  scale: 1.1;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f58e8e), to(#8888ee));
+  background: linear-gradient(to right bottom, #f58e8e, #8888ee);
+  -webkit-box-shadow: 10px 10px 10px grey;
+          box-shadow: 10px 10px 10px grey;
+}
+/*# sourceMappingURL=contact.css.map */

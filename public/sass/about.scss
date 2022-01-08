@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: black;
+    &::before {
+        position: absolute;
+        background: url(../img/tree-g0a4fe7ef7_1280.jpg) no-repeat center fixed;
+        background-size: cover;
+        content: "";
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100vh;
+        filter: blur(2px);
+        opacity: 1;
+        z-index: -1;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    // border: 2px solid white;
+    margin-top: 7%;
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        margin: 10px 0px;
+        text-align: center;
+        font-size: 2rem;
+        &::before {
+            content: "Delight";
+            color: white;
+            text-decoration: underline;
+        }
+        &::after {
+            content: "FULL.com";
+            color: aqua;
+            text-decoration: underline;
+        }
+    }
+    p {
+        margin: 20px 50px;
+        color: white;
+        font-size: 1.3rem;
+    }
+    .btn {
+        font-size: 1.1rem;
+        padding: 5px 30px;
+        border-radius: 20px;
+        cursor: pointer;
+        background: linear-gradient(to right bottom, rgb(110, 110, 231), rgb(19, 44, 153));
+        &:hover {
+            scale: 1.1;
+        }
+    }
+    animation-name: container;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    @keyframes container {
+        from {
+            margin-top: -500px;
+            opacity: 0.1;
+            z-index: -2;
+        }
+        to {
+            margin-top: 7%;
+            opacity: 1;
+            z-index: 1;
+        }
+    }
+}

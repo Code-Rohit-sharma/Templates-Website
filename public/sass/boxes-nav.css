@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.boxes-nav {
+  border: 2px solid #dab1da;
+  width: 98%;
+  height: 5%;
+  border-radius: 20px;
+  color: wheat;
+}
+
+.boxes-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.boxes-nav ul li {
+  margin: 4px 2%;
+  cursor: pointer;
+}
+
+.boxes-nav ul li a {
+  color: white;
+}
+
+.boxes-nav ul li a:hover {
+  color: #da4bda;
+  text-decoration: underline;
+  scale: 1.1;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+/*# sourceMappingURL=boxes-nav.css.map */

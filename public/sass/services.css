@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(128, 128, 128, 0.342)), to(black));
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.342), black);
+  margin-top: 2%;
+  width: 98%;
+  height: 89vh;
+  -webkit-box-shadow: 0px 0px 30px 2px wheat;
+          box-shadow: 0px 0px 30px 2px wheat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+}
+
+.container h2 {
+  color: white;
+  margin-bottom: 1%;
+  font-size: 2rem;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f58080), color-stop(#55f555), to(#8484ff));
+  background-image: linear-gradient(to left, #f58080, #55f555, #8484ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.container .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 98%;
+  height: 80vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+  border-radius: 20px;
+  -webkit-animation-name: boxes;
+          animation-name: boxes;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.container .boxes .box {
+  margin: 2% 2%;
+  width: 380px;
+  height: 250px;
+  border-radius: 15px;
+  color: white;
+}
+
+.container .boxes .box:hover {
+  scale: 1.1;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+  cursor: pointer;
+}
+
+.container .boxes .box img {
+  width: 375px;
+  height: 245px;
+  border-radius: 15px;
+}
+
+@-webkit-keyframes boxes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes boxes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=services.css.map */
