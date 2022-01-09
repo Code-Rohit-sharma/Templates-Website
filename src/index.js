@@ -54,7 +54,7 @@ app.get('/fullpage-services', (req, res) => {
     res.render('fullpage-services')
 });
 
-//images routing
+//Login images routing
 app.get('/login1', (req, res) => {
     res.render('loginpages/login1');
 });
@@ -65,6 +65,11 @@ app.get('/login2', (req, res) => {
 
 app.get('/login3', (req, res) => {
     res.render('loginpages/login3');
+});
+
+//Signup images routing
+app.get('/signup1', (req, res) => {
+    res.render('signuppages/signup1');
 });
 
 //listening the server
