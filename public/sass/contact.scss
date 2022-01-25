@@ -84,4 +84,15 @@ body {
             box-shadow: 10px 10px 10px grey;
         }
     }
+    animation-name: container;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    @keyframes container {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 }

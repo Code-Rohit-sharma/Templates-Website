@@ -51,6 +51,12 @@ body::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation-name: container;
+          animation-name: container;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .container h2 {
@@ -113,5 +119,23 @@ body::before {
   background: linear-gradient(to right bottom, #f58e8e, #8888ee);
   -webkit-box-shadow: 10px 10px 10px grey;
           box-shadow: 10px 10px 10px grey;
+}
+
+@-webkit-keyframes container {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes container {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
